@@ -1,0 +1,7 @@
+dark ---> #023047
+
+light 1 ---> #90e0ef
+
+light 2 ---> #d7e3fc
+
+other ---> #fee440

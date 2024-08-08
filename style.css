@@ -1,0 +1,150 @@
+body {
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+span, nav {
+    padding: 0;
+    margin: 0;
+}
+
+.main-navbar {
+    margin-bottom: 1em;
+}
+
+#one {
+    background-color: #14213d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.logo span {
+    color: #f9c74f;
+}
+
+#one .nav-links {
+    flex-grow: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-links li a{
+    color: #90e0ef;
+    font-size: 1.3rem;
+}
+
+.nav-links li a:hover {
+    color: #f9c74f;
+    transition: color 400ms;
+}
+
+.contact {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 0.4em;
+    border: 0;
+    padding: 0.2em 0.6em;
+    background-color: #90e0ef;
+    color: #023047;
+    cursor: pointer;
+}
+
+.contact:hover {
+    background-color: #fee440;
+    transition: background-color 400ms;
+}
+
+#two {
+    background-color: #14213d;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem 8rem;
+}
+
+#two .nav-links {
+    flex-grow: 1;
+    max-width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#three {
+    background-color: #14213d;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+#three .first {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    max-width: 30%;
+}
+
+#three .first .nav-links {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    max-width: 55%;
+}
+
+@media (max-width: 1650px) {
+    #three .first {
+        max-width: 35%;
+    }
+}
+
+@media (max-width: 1450px) {
+    #three .first {
+        max-width: 40%;
+    }
+}
+
+@media (max-width: 1250px) {
+    #three .first {
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 1150px) {
+    #two, #two .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #three, #three .first, #three .first .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 900px) {
+    #one, #one .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+}
